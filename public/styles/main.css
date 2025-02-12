@@ -1,0 +1,48 @@
+/* root */
+:root {
+    --main-color: #13072e;
+    --card-color: linear-gradient(to top, #3f2182, #13072e); 
+    --hover-links: #9980d1;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+.mainBackgroundColor{
+    background-color: var(--main-color);
+}
+
+/* navbar style */
+.navbar-nav .nav-item:hover .nav-link {
+    color: var(--hover-links) !important; /* Change color as needed */
+}
+
+/* content */
+.content-container{
+    margin: 20px 0px;
+    padding: 10px 20px;
+    height: 100vh;
+}
+
+.content-container .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.content-container .card{
+    background: var(--card-color);
+    margin-right: 10px;
+}
+
+/* Footer style */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

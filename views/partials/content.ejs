@@ -1,0 +1,18 @@
+<div class="container-fluid p-2 rounded shadow content-container">
+    <h1 class="text-center text-white mb-4">Read the Blog</h1>
+    <div class="card-container d-flex flex-wrap gap-3 justify-content-center">
+      <% posts.forEach(function(post) { %>
+        <div class="card" style="width: 18rem">
+          <div class="card-body text-white">
+            <h5 class="card-title"><%= post.title %></h5>
+            <p class="card-text">
+              <%= post.info %>
+            </p>
+            <a href="/edit/<%= post.id %>" class="card-link">Edit</a>
+            <a href="/delete/<%= post.id %>" class="card-link" onclick="return confirm('Are you sure you want to delete this post?');">Delete</a>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+  
